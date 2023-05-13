@@ -1,6 +1,7 @@
 ﻿asgiref==3.6.0
 certifi==2021.10.8
 pip==23.1.2
+matplotlib==3.5.1
 charset-normalizer==2.0.12
 commonmark==0.9.1
 comtypes==1.1.11
