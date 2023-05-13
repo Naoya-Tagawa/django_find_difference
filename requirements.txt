@@ -1,5 +1,6 @@
 ﻿asgiref==3.6.0
 certifi==2021.10.8
+pip==23.1.2
 charset-normalizer==2.0.12
 commonmark==0.9.1
 comtypes==1.1.11
@@ -25,7 +26,6 @@ packaging==21.3
 Pillow==9.1.0
 pkginfo==1.8.2
 psycopg2-binary==2.9.6
-PyAudio==0.2.12
 pygame==2.1.2
 Pygments==2.12.0
 pylsd==0.0.2
@@ -60,4 +60,4 @@ django-environ
 gunicorn
 psycopg2-binary
 whitenoise
-pip==23.1.2
+
