@@ -123,7 +123,7 @@ USE_TZ = True
 # )
 
 # こちらに変更する
-STATIC_URL = ""
+STATIC_URL = "media/"
 STATIC_ROOT = str(BASE_DIR / 'staticfiles')
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 # Static files (CSS, JavaScript, Images)
