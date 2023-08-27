@@ -44,6 +44,8 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "fd_app",
+    'corsheaders',
+
 ]
 
 MIDDLEWARE = [
@@ -56,7 +58,10 @@ MIDDLEWARE = [
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
-
+# ここにフロントエンドのURLを追加する
+CORS_ORIGIN_WHITELIST = [
+    'http://localhost:3000'
+]
 ROOT_URLCONF = "fd.urls"
 
 TEMPLATES = [

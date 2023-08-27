@@ -5,6 +5,7 @@ import cv2
 import numpy as np
 from PIL import Image
 import io
+from django.http import JsonResponse
 def index(request):
     params = {
         'title':'画像のアップロード',
@@ -112,10 +113,13 @@ def input_form(request):
         if form.is_valid():
             upload_img = form.save()
             #upload_img.img.delete()
-            print("gggggggggggggggg")
+            #追記
+            upload_img_url = upload_img.img.url
             params['input_id'] = upload_img.id
             params['input_url'] = upload_img.img.url
         #print(params['id'])
+        #追記
+        return JsonResponse({'upload_img_url':upload_img_url})
     return render(request,'fd_app/find.html',params)
 
 #form.as_pは「formの内容をpタグで囲って表示
@@ -177,4 +181,5 @@ def find_different(request,input_id,input_url2):
         params['input_url'] = input_image1.img.url
         
     return render(request,'fd_app/find.html',params)
+
             
